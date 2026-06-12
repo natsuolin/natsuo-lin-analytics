@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+dist/
+
+# Local Database Files
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment Secrets
+.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
