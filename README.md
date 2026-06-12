@@ -1,6 +1,3 @@
-Here is your updated, fully polished README.md file. I have packed the title with professional development emojis and ensured your anonymity by keeping your personal data completely out of it—exclusively using your Natsuo Lin developer handle.
-
-Markdown
 # 🧠 🛰️ 📊 Cryptocurrency Alert System 📈 ⚙️ ⚡
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
