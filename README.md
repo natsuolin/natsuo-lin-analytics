@@ -1,4 +1,7 @@
-# 🧠 Cryptocurrency Alert System
+Here is your updated, fully polished README.md file. I have packed the title with professional development emojis and ensured your anonymity by keeping your personal data completely out of it—exclusively using your Natsuo Lin developer handle.
+
+Markdown
+# 🧠 🛰️ 📊 Cryptocurrency Alert System 📈 ⚙️ ⚡
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D%2018.0.0-339933?logo=node.js)](https://nodejs.org/)
@@ -55,20 +58,20 @@ Deployment Steps
 Clone the Asset Repository:
 
 Bash
-git clone [https://github.com/natsuolin/cryptocurrency-alert-system.git](https://github.com/natsuolin/cryptocurrency-alert-system.git)
-cd cryptocurrency-alert-system
+   git clone [https://github.com/natsuolin/cryptocurrency-alert-system.git](https://github.com/natsuolin/cryptocurrency-alert-system.git)
+   cd cryptocurrency-alert-system
 Install Runtime Dependencies:
 
 Bash
-npm install
+   npm install
 Configure Environment Variables:
 Create a .env file in the root directory and populate required infrastructure settings:
 
-Snippet de código
-PORT=3000
-DB_PATH=./src/config/crypto_alerts.db
-BINANCE_API_URL=[https://api.binance.com](https://api.binance.com)
-COINGECKO_API_URL=[https://api.coingecko.com/api/v3](https://api.coingecko.com/api/v3)
+Ini, TOML
+   PORT=3000
+   DB_PATH=./src/config/crypto_alerts.db
+   BINANCE_API_URL=[https://api.binance.com](https://api.binance.com)
+   COINGECKO_API_URL=[https://api.coingecko.com/api/v3](https://api.coingecko.com/api/v3)
 Initialize Storage Schema:
 The database structures are automatically generated on application startup via dbService.js.
 
@@ -83,19 +86,16 @@ The service listener will initialize on the port defined in your configuration (
 API Testing Workflows
 You can interact with and test the monitoring endpoints using tools like Postman or cURL:
 
-1. Retrieve Spot Price Telemetry
-Bash
-GET /api/crypto/price?symbol=BTCUSDT
-2. Provision New Price Alert Threshold
-Bash
-POST /api/alerts/create
-Content-Type: application/json
+Retrieve Spot Price Telemetry
 
-{
-  "symbol": "ETHUSDT",
-  "target_price": 3500.00,
-  "condition": "ABOVE"
-}
+Bash
+   curl -X GET http://localhost:3000/api/crypto/price?symbol=BTCUSDT
+Provision New Price Alert Threshold
+
+Bash
+   curl -X POST http://localhost:3000/api/alerts/create \
+     -H "Content-Type: application/json" \
+     -d '{"symbol": "ETHUSDT", "target_price": 3500.00, "condition": "ABOVE"}'
 🤝 Contribution Guidelines
 Contributions are welcome. To propose architectural changes or optimization updates:
 
@@ -115,4 +115,5 @@ Secure Gateway: natsuolin@proton.me
 Platform Scope: Professional OSINT Systems & Back-end Automation Engineering.
 
 📝 Terms of Licensing
-Distributed under the MIT License. Review the LICENSE document included in the root manifest directory for complete regulatory statements.
+Distributed under the MIT License. Review the LICENSE document included in the
+root manifest directory for complete regulatory statements.
